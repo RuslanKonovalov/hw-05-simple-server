@@ -1,0 +1,21 @@
+{
+  "name": "hw-05-simple-server",
+  "version": "0.0.1",
+  "description": "node.js HTTP server",
+  "main": "index.js",
+  "scripts": {
+    "dev-text": "nodemon cross-env PORT=7000 ./http-text.js",
+    "start-text": "cross-env PORT=8000 node ./http-text.js"
+  },
+  "keywords": [],
+  "author": "Ruslan",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
