@@ -9,9 +9,9 @@ const server = http.createServer((req, res) => {
     res.writeHead(200, {'Content-Type': 'text/html; charset: utf-8'});
 
     if (urlPath === 'user') {
-        res.write(`<h1>Hello ${urlPath}!</h1>`);
+        res.write(`<h1>Hello, ${urlPath}!</h1>`);
     } else {
-        res.write(`<h1>Hello ${urlPath}!</h1>`);
+        res.write(`<h1>Hello, ${urlPath.slice(6)}!</h1>`);
     }
     res.end();
 })
